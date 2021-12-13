@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes"
+	v1 "github.com/mnasruul/go-grpc-http-rest-microservice-tutorial/pkg/api/v1"
 	"google.golang.org/grpc"
 )
 

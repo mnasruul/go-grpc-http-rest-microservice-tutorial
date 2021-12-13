@@ -7,9 +7,8 @@ import (
 	"os"
 	"os/signal"
 
+	v1 "github.com/mnasruul/go-grpc-http-rest-microservice-tutorial/pkg/api/v1"
 	"google.golang.org/grpc"
-
-	"github.com/mnasruul/go-grpc-http-rest-microservice-tutorial/pkg/api/v1"
 )
 
 // RunServer runs gRPC service to publish ToDo service

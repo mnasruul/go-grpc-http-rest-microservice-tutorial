@@ -9,9 +9,8 @@ import (
 
 	"github.com/golang/protobuf/ptypes"
 	"github.com/golang/protobuf/ptypes/timestamp"
+	v1 "github.com/mnasruul/go-grpc-http-rest-microservice-tutorial/pkg/api/v1"
 	"gopkg.in/DATA-DOG/go-sqlmock.v1"
-
-	"github.com/mnasruul/go-grpc-http-rest-microservice-tutorial/pkg/api/v1"
 )
 
 func Test_toDoServiceServer_Create(t *testing.T) {
