@@ -1,1 +1,1 @@
-protoc --proto_path=api/proto/v1 --proto_path=third_party  --go_out=pkg/api  todo-service.proto
+protoc --proto_path=api/proto/v1 --proto_path=third_party  --go_out=pkg/api  --go-grpc_opt=require_unimplemented_servers=false  --go-grpc_out=pkg/api   todo-service.proto

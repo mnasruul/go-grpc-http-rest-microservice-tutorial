@@ -262,3 +262,5 @@ func (s *toDoServiceServer) ReadAll(ctx context.Context, req *v1.ReadAllRequest)
 		ToDos: list,
 	}, nil
 }
+
+func (s *toDoServiceServer) mustEmbedUnimplementedToDoServiceServer() {}
