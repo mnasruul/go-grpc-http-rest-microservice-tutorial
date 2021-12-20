@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dev-gosso
+  labels:
+      name: dev-gosso
+      app: dev-gosso
+spec:
+  selector:
+    name: dev-gosso
+    app: dev-gosso
+  ports:
+    - port: 80
+      targetPort: 8888

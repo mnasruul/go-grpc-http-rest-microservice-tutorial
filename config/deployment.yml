@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  name: dev-gosso
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: dev-gosso
+      name: dev-gosso
+  template:
+    metadata:
+      labels:
+        app: dev-gosso
+        name: dev-gosso
+    spec:
+      containers:
+        - image: '192.168.223.213:5000/dev-gossoapi:1.1'
+          name: container-dev-gosso
+          ports:
+            - containerPort: 8888
+      imagePullSecrets:
+        - name: regcred
